@@ -51,6 +51,6 @@ JOIN (
     SELECT K0, K1
     FROM tbl1
     WHERE c13 > 400
-  )
-ON (tbl1.K1=tbl2.K1)
+  ) t
+ON (t.K1=tbl2.K1)
 GROUP BY K0
