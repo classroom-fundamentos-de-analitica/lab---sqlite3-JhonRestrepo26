@@ -44,13 +44,13 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
 
-SELECT t.K0, avg(d.c21)
-FROM tbl2 d
+SELECT K0, avg(c21)
+FROM tbl2
 
 JOIN (
     SELECT K0, K1
     FROM tbl1
     WHERE c13 > 400
-  ) t
-ON (t.K1=d.K1)
+  )
+ON (tbl1.K1=tbl2.K1)
 GROUP BY K0
