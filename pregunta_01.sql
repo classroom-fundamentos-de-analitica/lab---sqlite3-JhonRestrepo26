@@ -17,8 +17,5 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-cur.execute(
-    """
-    SELECT SUM(c12) FROM tbl1 
-    """
-).fetchall()
+
+SELECT SUM(c12) FROM tbl1 
