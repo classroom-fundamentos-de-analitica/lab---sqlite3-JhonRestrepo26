@@ -41,3 +41,5 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+
+SELECT  SUBSTR(c23,1,4), avg(c21)  FROM tbl2 GROUP BY SUBSTR(c23,1,4)
